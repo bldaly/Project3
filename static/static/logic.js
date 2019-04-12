@@ -29,21 +29,21 @@ function markerSize(feature) {
   
   var satelliteMap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
     attribution: attribution,
-    maxZoom: 4,
+    maxZoom: 10,
     id: "mapbox.satellite",
     accessToken: API_KEY
   });
   
   var darkMap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
     attribution: attribution,
-    maxZoom: 4,
+    maxZoom: 10,
     id: "mapbox.dark",
     accessToken: API_KEY
   });
   
   var outdoorsMap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
     attribution: attribution,
-    maxZoom: 4,
+    maxZoom: 10,
     id: "mapbox.outdoors",
     accessToken: API_KEY
   });
@@ -100,8 +100,8 @@ function markerSize(feature) {
         };
     
         var map = L.map("map", {
-          center: [40.7829, -73.9654],
-          zoom: 4,
+          center: [38.6270, -100.1994],
+          zoom: 5,
           layers: [satelliteMap, name]
         });
     
